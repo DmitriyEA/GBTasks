@@ -9,7 +9,7 @@ if (a > b)
 {
     WriteLine("a больше b");
 }
-if (a < b)
+else if (a < b)
 {
     WriteLine("b больше a");
 }
