@@ -1,12 +1,17 @@
 ﻿using static System.Console;
 
-Write("Введите число: ");
+Write("Введите номер дня недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-//int count = 100;
-
-//(number > 99)
-
-//(number % count == 0)
-
-WriteLine(number / 10);
+if (number < 1 && number > 7)
+{
+    WriteLine("Это не день недели.");
+}
+else if (number > 0 && number < 6)
+{
+    WriteLine("Это рабочий день.");
+}
+else
+{
+    WriteLine("Это выходной день.");
+}
