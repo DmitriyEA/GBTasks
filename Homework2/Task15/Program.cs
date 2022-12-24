@@ -3,15 +3,15 @@
 Write("Введите номер дня недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number < 1 && number > 7)
-{
-    WriteLine("Это не день недели.");
-}
-else if (number > 0 && number < 6)
+if (number >= 1 && number <= 5)
 {
     WriteLine("Это рабочий день.");
 }
-else
+else if (number ==6  | number == 7)
 {
     WriteLine("Это выходной день.");
+}
+else
+{
+    WriteLine("Такого дня нет.");
 }
