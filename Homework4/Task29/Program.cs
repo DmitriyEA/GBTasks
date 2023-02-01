@@ -26,13 +26,9 @@ int[] GetArray(int size)
 void PrintArray(int[] arr)
 {
     Write("[");
-    for (int k = 0; k < array.Length; k++)
+    for (int k = 0; k < array.Length - 1; k++)
     {
-        Write($"{arr[k]}");
-        if (k < array.Length - 1)
-        {
-            Write(", ");
-        }
+        Write($"{arr[k]}, ");
     }
-    Write("]");
+    Write($"{arr[array.Length - 1]}]");
 }
