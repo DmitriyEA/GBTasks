@@ -20,7 +20,7 @@ PrintArray(array);
 WriteLine();
 WriteLine();
 
-consArray(array);
+// consArray(array);
 
 
 
@@ -48,12 +48,12 @@ void PrintArray(int[] arr1)
     Write($"{arr1[arr1.Length - 1]}]");
 }
 
-bool consArray(int[] arr2)
-{
-    for (int i = 0; i < arr2.Length; i++)
-    {
-        if (arr2[i] == number) return true;
-        else return false;
-    }
-    return ...;
-}
+// bool consArray(int[] arr2)
+// {
+//     for (int i = 0; i < arr2.Length; i++)
+//     {
+//         if (arr2[i] == number) return true;
+//         else return false;
+//     }
+//     return ...;
+// }
