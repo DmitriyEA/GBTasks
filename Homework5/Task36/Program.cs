@@ -19,20 +19,29 @@ int[] GetArray(int size, int min, int max)
 {
     int[] ResultArray = new int[size];
     Random rnd = new Random();
-    for (int i = 0; i < size; i++) ResultArray[i] = rnd.Next(min, max + 1);
+    for (int i = 0; i < size; i++)
+    {
+        ResultArray[i] = rnd.Next(min, max + 1);
+    }
     return ResultArray;
 }
 
 void PrintArray(int[] inArray)
 {
     Write("[");
-    for (int i = 0; i < inArray.Length - 1; i++) Write($"{inArray[i]}, ");
+    for (int i = 0; i < inArray.Length - 1; i++)
+    {
+        Write($"{inArray[i]}, ");
+    }
     Write($"{inArray[inArray.Length - 1]}]");
 }
 
 int SumOddNumber(int[] inArray)
 {
     int result = 0;
-    for (int i = 1; i < inArray.Length; i += 2) result += inArray[i];
+    for (int i = 1; i < inArray.Length; i += 2)
+    {
+        result += inArray[i];
+    }
     return result;
 }
