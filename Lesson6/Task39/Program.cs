@@ -10,7 +10,7 @@ WriteLine($"Результат: {IsLucky(ticket)}");
 int IsLucky(int inNum)
 {
     int a = inNum / 100000;
-    int b = inNum
+    int b = inNum;
     return result;
 }
 
